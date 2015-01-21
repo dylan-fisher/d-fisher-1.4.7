@@ -9,7 +9,7 @@ student_file = os.path.join(directory, 'Will Smith.jpg')
 
 # Open and show the Will Smith image in a new Figure window
 Will_Smith_img = PIL.Image.open(student_file)
-fig, axes = plt.subplots(1, 3)
+fig, axes = plt.subplots(1, 6)
 axes[0].imshow(Will_Smith_img, interpolation='none')
 
 # Display Will Smith in second axes and set window to the right eye
@@ -23,19 +23,21 @@ fig.show()
 
 student_file = os.path.join(directory, 'Young Channing Tatum.jpg')
 Young_Channing_Tatum_img = PIL.Image.open(student_file)
-axes[2].imshow(Young_Channing_Tatum_img, interpolation='none')
+axes[3].imshow(Young_Channing_Tatum_img, interpolation='none')
 fig.show()
 
-axes[1].imshow(Oprah_img, interpolation='none')
-axes[1].set_xticks(range(1050, 1410, 100))
-axes[1].set_xlim(1050, 1400) #coordinates measured in plt, and tried in iPython
-axes[1].set_ylim(1100, 850)
+student_file = os.path.join(directory, 'Ariana Grande.jpg')
+Ariana_Grande_img = PIL.Image.open(student_file)
+axes[2].imshow(Ariana_Grande_img, interpolation='none')
 fig.show()
 
-Oprah_file = os.path.join(directory, 'Oprah.jpg')
-Oprah_img = PIL.Image.open(Oprah_file)
-Oprah_small = Oprah_img.resize((89, 87)) #eye width and height measured in plt
-fig2, axes2 = plt.subplots(1, 2)
-axes2[0].imshow(Oprah_img)
-axes2[1].imshow(Oprah_small)
-fig2.show()
+student_file = os.path.join(directory, 'Morgan Freeman.jpg')
+Morgan_Freeman_img = PIL.Image.open(student_file)
+axes[4].imshow(Morgan_Freeman_img, interpolation='none')
+fig.show()
+
+student_file = os.path.join(directory, 'Angelina Jolie.jpg')
+Angelina_Jolie_img = PIL.Image.open(student_file)
+axes[5].imshow(Angelina_Jolie_img, interpolation='none')
+fig.show()
+
