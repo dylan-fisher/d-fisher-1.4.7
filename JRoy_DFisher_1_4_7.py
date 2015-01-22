@@ -41,3 +41,5 @@ Angelina_Jolie_img = PIL.Image.open(student_file)
 axes[5].imshow(Angelina_Jolie_img, interpolation='none')
 fig.show()
 
+import Image, ImageOps
+ImageOps.expand(Image.open('Will Smith.jpg'),border=30,fill='black').save('Will Smith.png')
