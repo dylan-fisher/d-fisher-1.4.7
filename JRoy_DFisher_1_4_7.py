@@ -43,3 +43,43 @@ fig.show()
 
 import Image, ImageOps
 ImageOps.expand(Image.open('Will Smith.jpg'),border=30,fill='black').save('Will Smith.png')
+
+import Image, ImageOps
+ImageOps.expand(Image.open('Oprah.jpg'),border=30,fill='black').save('Oprah.png')
+
+import Image, ImageOps
+ImageOps.expand(Image.open('Young Channing Tatum.jpg'),border=30,fill='black').save('Young Channing Tatum.png')
+
+import Image, ImageOps
+ImageOps.expand(Image.open('Ariana Grande.jpg'),border=30,fill='black').save('Ariana Grande.png')
+
+import Image, ImageOps
+ImageOps.expand(Image.open('Morgan Freeman.jpg'),border=30,fill='black').save('Morgan Freeman.png')
+
+import Image, ImageOps
+ImageOps.expand(Image.open('Angelina Jolie.jpg'),border=30,fill='black').save('Angelina Jolie.png')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
